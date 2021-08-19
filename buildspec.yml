@@ -30,7 +30,7 @@ phases:
         - python3 -m pytest test_main.py
   build:
     commands:
-      - docker login --user-name $DOCKERHUB_USERNAME --password $DOCKERHUB_PASSWORD
+      - docker login --username $DOCKERHUB_USERNAME --password $DOCKERHUB_PASSWORD
       - docker build --tag $REPOSITORY_URI:$TAG .
 
   post_build:
