@@ -16,6 +16,7 @@ _mailinglist
 .idea/
 docs/_build/
 __pycache__
+
 .env_file
 
 # Coverage reports
@@ -29,5 +30,9 @@ htmlcov/
 .direnv
 
 .github/**
+
 examples
 
+aws-auth-patch-example.yml
+aws-auth-patch.yml
+github-access-token.txt
