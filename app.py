@@ -112,4 +112,4 @@ def _get_jwt(user_data):
     return token
 
 if __name__ == '__main__':
-    APP.run(host='0.0.0.0', port=8080, debug=True)
+    APP.run(host='0.0.0.0', port=31309, debug=True)
