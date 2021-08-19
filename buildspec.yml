@@ -30,7 +30,6 @@ phases:
         - python3 -m pytest test_main.py
   build:
     commands:
-      - docker login --username $DOCKERHUB_USERNAME --password $DOCKERHUB_PASSWORD
       - docker build --tag $REPOSITORY_URI:$TAG .
 
   post_build:
@@ -44,8 +43,6 @@ artifacts:
 env:
   parameter-store:         
     JWT_SECRET: JWT_SECRET
-    DOCKERHUB_USERNAME: DOCKERHUB_USERNAME
-    DOCKERHUB_PASSWORD: DOCKERHUB_PASSWORD
 
 
 # change date on iam auth commnad 1.18.8/2020-09-18    
