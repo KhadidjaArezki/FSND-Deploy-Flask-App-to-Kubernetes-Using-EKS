@@ -14,7 +14,7 @@ phases:
       # Get latest stable release kubectl
       - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
         # Command for specific kubectl version:
-      - curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.22.0/bin/linux/amd64/kubectl
+      - curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.22.0/bin/linux/arm64/kubectl
       - chmod +x ./kubectl ./aws-iam-authenticator
       - echo `kubectl version`
       - export PATH=$PWD/:$PATH
@@ -46,3 +46,4 @@ env:
 
 
 # change date on iam auth commnad 1.18.8/2020-09-18    
+# External IP: a231d0598892340fcbc8deafb6cf8a95-2144616282.us-east-2.elb.amazonaws.com
